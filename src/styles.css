@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+}
+
+div.prop {
+  max-width: 1483px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  overflow: hidden;
+
+  justify-content: center;
+  display: flex;
+  overflow: hidden;
+}
+
+div.container {
+  /* background-color: #e5f1f9; */
+  max-width: 1110px;
+  padding: 25px 10px;
+  margin: 20px auto;
+}
+
+img.prop {
+  display: block;
+}
+
+.App {
+  font-family: sans-serif;
+}
+
+h1 {
+  color: #1070b4;
+  font-family: FSAlbert, sans-serif;
+  line-height: 1.15;
+  font-weight: 400;
+  font-size: 3.375rem;
+}
+
+@font-face {
+  font-family: FSAlbert;
+  src: url(/fonts/fsalbbol-webfont-fab5bd46ba.woff2) format("woff2"),
+    url(/fonts/fsalbbol-webfont-03ce46bbd1.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: FSAlbert;
+  src: url(/fonts/fsalbita-webfont-bac3e6abba.woff2) format("woff2"),
+    url(/fonts/fsalbita-webfont-4ebbe38f03.woff) format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: FSAlbert;
+  src: url(/fonts/fsalbreg-webfont-1ca59dd530.woff2) format("woff2"),
+    url(/fonts/fsalbreg-webfont-0d935fb02a.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.productAmount .MuiInput-input {
+  padding: 1em;
+  text-align: center;
+}
+
+div.container.flatBottom {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+div.container.flatTop {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+div.loading > img {
+  min-height: 300px;
+  min-width: 300px;
+  background: #eeeeee;
+  background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
+  border-radius: 5px;
+  background-size: 200% 100%;
+  animation: 1.5s shine linear infinite;
+}
+
+div.loading > small {
+  display: none;
+}
+
+@keyframes shine {
+  to {
+    background-position-x: -200%;
+  }
+}
